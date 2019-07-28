@@ -7,7 +7,7 @@ class Parser(object):
         self.token_index = 0
 
     def parse(self):
-        while self.token_index < len(self.token_index):
+        while self.token_index < len(self.tokens):
             token_type = self.tokens[self.token_index][0]
             token_value = self.tokens[self.token_index][1]
 

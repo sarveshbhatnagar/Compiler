@@ -1,5 +1,5 @@
 import lexer
-
+import parser
 
 def main():
 
@@ -9,5 +9,9 @@ def main():
 
     lex = lexer.Lexer(content)
     tokens = lex.tokenize()
+
+
+    parse = parser.Parser(tokens)
+    objs = parse.parse()
 
 main()
