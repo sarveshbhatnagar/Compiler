@@ -11,6 +11,9 @@ class Parser(object):
             token_type = self.tokens[self.token_index][0]
             token_value = self.tokens[self.token_index][1]
 
-            print(token_type, token_value)
+            if token_type == "VAR_DECLERATION" and token_value == "var":
+                print(token_type, token_value)
+
+
 
             self.token_index += 1
