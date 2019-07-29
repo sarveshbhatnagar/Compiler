@@ -1,2 +1,4 @@
 var age = 17;
+var fb = 30;
+var nd = 32;
 print age;
