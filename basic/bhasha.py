@@ -63,11 +63,13 @@ class RTError(Error):
 
 class Position:
 		def __init__(self, idx, ln, col, fn, ftxt):
-				self.idx = idx
-				self.ln = ln
-				self.col = col
 				self.fn = fn
 				self.ftxt = ftxt
+				self.idx = idx
+				self.col = col
+				self.ln = ln
+
+
 
 		def advance(self, current_char=None):
 				self.idx += 1
